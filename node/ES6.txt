@@ -1,0 +1,53 @@
+ECMAScript 6, also known as ES6 and ECMAScript 2015, introduced a significant update to the JavaScript language. It brought several new features and improvements that made JavaScript more powerful and easier to work with. Some of the key features of ES6 include:
+
+1. **`let` and `const` Keywords**: 
+   - `let` allows you to declare block-scoped variables, significantly improving the manageability of variable scopes.
+   - `const` is used to declare variables meant to be constants. Once assigned, their values cannot be changed.
+
+2. **Arrow Functions**: 
+   - Provide a more concise syntax for writing function expressions.
+   - They don’t have their own `this`, `arguments`, `super`, or `new.target` bindings, which makes them ideal for certain types of functions where you want to preserve the lexical `this`.
+
+3. **Template Literals**: 
+   - Allow for string interpolation and multiline strings, making the process of working with strings more straightforward and readable.
+
+4. **Default Parameters**: 
+   - Enable setting default values for function parameters.
+
+5. **Destructuring Assignment**: 
+   - Allows unpacking values from arrays or properties from objects into distinct variables.
+
+6. **Enhanced Object Literals**: 
+   - Provide a more concise syntax for initializing objects and defining methods, and allow setting a prototype, calling `super`, and computing property names.
+
+7. **Promises**: 
+   - Provide a more robust way to handle asynchronous operations.
+
+8. **Classes**: 
+   - Introduce class syntax as syntactical sugar over the existing prototype-based inheritance, making it easier to write and manage.
+
+9. **Modules**: 
+   - Support for `import` and `export` syntax allows for modularizing JavaScript code in a more maintainable and scalable way.
+
+10. **Spread Operator (`...`)**: 
+    - Allows an iterable (e.g., array) to be expanded in places where zero or more arguments or elements are expected.
+
+11. **Rest Parameters**: 
+    - Provide a way to deal with an indefinite number of parameters, grouping them into a single array.
+
+12. **Symbol Type**: 
+    - A new primitive type that can be used as a unique identifier for object properties.
+
+13. **Iterators and Generators**: 
+    - Iterators are a new way to loop over collections, and generators provide a way to define iterators with a function-like syntax.
+
+14. **New Built-in Methods**: 
+    - Several new methods were added to existing built-in objects like Arrays, Strings, Objects, etc.
+
+15. **Map and Set Collections**: 
+    - New data structures for storing collections of values and key-value pairs.
+
+16. **Proxy and Reflect**: 
+    - Proxy for creating objects with custom behavior for fundamental operations (e.g., property lookup, assignment, enumeration, function invocation), and Reflect for performing operations on objects in a manner similar to the proxy handlers.
+
+These features collectively modernized JavaScript, making it more powerful, efficient, and easier to write and maintain. ES6 set the stage for later updates to the language, which continue to enhance its capabilities and feature set.
