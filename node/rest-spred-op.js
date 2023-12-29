@@ -1,4 +1,10 @@
+// REST Operator: Collects all remaining elements into an array.
+// Spread Operator: Expands iterables into individual elements.
+
+
 //=================REST Operator START ================
+
+//The REST operator (also known as the rest parameter syntax) allows us to represent an indefinite number of arguments as an array
 function addNumbers(a, b, c, ...other) {
     // console.log(other[0]);
     console.log(other);
@@ -16,6 +22,7 @@ console.log(res);
 
 //=================SPREAD Operator Start ================
 
+//The Spread operator is used to expand or "spread" iterable elements such as arrays or strings into individual elements. This is useful in various scenarios, including array literals, function calls, and object literals.
 
 const names = ['satish', 'anil', 'sopa'];
 

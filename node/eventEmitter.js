@@ -19,4 +19,4 @@ emitter.on('message', (arg) => {
 });
 
 // Emitting the 'message' event
-emitter.emit('message', { id: 1, text: 'Hello World!' });
+emitter.emit('message', 100);
