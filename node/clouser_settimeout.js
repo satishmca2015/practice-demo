@@ -7,7 +7,7 @@ function fun() {
         }
 
         inner(i); */
-
+        // console.log(i);
         setTimeout(function() {
             console.log(i);
         }, i * 1000);

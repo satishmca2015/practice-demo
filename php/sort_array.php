@@ -15,7 +15,7 @@ function sortArray($numArray)
     return $numArray;
 }
 
-$number = [40,20,10,60];
+$number = [40,20,10];
 $result = sortArray($number);
 print_r($result);
 

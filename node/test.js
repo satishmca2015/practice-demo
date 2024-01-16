@@ -1,27 +1,82 @@
-/* var a = 10;
+// https://jsonplaceholder.typicode.com/
 
-for(let i=0;i<10; i++){
-    var a = a+i;
-    console.log(a,i);
+// https://jsonplaceholder.typicode.com/todos
+
+/* [
+{
+	userId: 1,
+	totalTasks:10,
+	completed:6,
+	pending: 4
+},
+{
+	userId: 2,
+	totalTasks:15,
+	completed:5,
+	pending: 10
 }
-console.log(a);
- */
+] */
 
-// Sample array of numbers
-let numbers = [5, 2, 9, 1, 5];
 
-// Perform a basic sorting using a simple for loop
-for (let i = 0; i < numbers.length - 1; i++) {
-  for (let j = 0; j < numbers.length - i - 1; j++) {
-    // Compare adjacent elements and swap them if they are in the wrong order
-    if (numbers[j] > numbers[j + 1]) {
-      // Swap numbers[j] and numbers[j+1]
-      let temp = numbers[j];
-      numbers[j] = numbers[j + 1];
-      numbers[j + 1] = temp;
+const data = [
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "delectus aut autem",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "title": "quis ut nam facilis et officia qui",
+      "completed": false
     }
-  }
-}
+  ];
 
-// Output the sorted array
-console.log(numbers); // Output: [1, 2, 5, 5, 9]
+
+
+  /* const userdata = [];
+  let complete = 0;
+    let pending = 0;
+  data.map((user)=>{
+    // console.log((user));
+    if(user.userId){
+        
+        if(user.completed == true){
+            complete = complete+1;
+        }else{
+            pending = pending + 1;
+        }
+        let temp = {
+            completed:complete,
+            pending: pending
+        }
+        userdata.push(temp);
+    }
+}); */
+
+const userIds = [...new Set(data.map(item => item.userId))];
+
+// Then, map each userId to its summary
+const result = userIds.map(userId => {
+    const tasksByUser = data.filter(function(task){
+        task.userId === userId;
+    } );
+
+    const totalTasks = tasksByUser.length;
+    // const completed = tasksByUser.filter(task => task.completed).length;
+    const completed = tasksByUser.filter(function(task){
+        task.completed.length;
+    }); 
+        
+    const pending = totalTasks - completed;
+
+    return { userId, totalTasks, completed, pending };
+});
+
+console.log(result);
+    
+// console.log(userdata);
+
+// { userId: 1, totalTasks: 0, completed: 0, pending: 0 } ]
+
