@@ -1,0 +1,8 @@
+Callstack : callstack is used to manage order execution context in JS
+            callsatck has it's global execution context it is manage all functions execution in js
+            in callstack we have memory allocation and code execution part.
+
+Hoisting : in js hositing we can access variable and functions before initailsation wihout any error
+
+Undefined & not defined : 
+            Undefined is special keyword or datatype in js. Undefined is created in memory creation phase in global execution context 

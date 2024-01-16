@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event Capturing and Bubbling</title>
+</head>
+<body>
+  <div id="parent">
+    <button id="child">Click me</button>
+  </div>
+  <script>
+    // Event Capturing (rarely used)
+    document.addEventListener('click', function(event) {
+      console.log('Event captured at:', event.target);
+    }, true); // Use capture: true to enable capturing phase
+
+    // Bubbling (default behavior)
+    document.getElementById('parent').addEventListener('click', function(event) {
+      console.log('Event bubbled to parent:', event.target);
+    });
+
+    document.getElementById('child').addEventListener('click', function(event) {
+      console.log('Event at target:', event.target);
+    });
+  </script>
+</body>
+</html>
