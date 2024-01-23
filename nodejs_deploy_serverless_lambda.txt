@@ -1,0 +1,55 @@
+deloy node js serverless
+
+
+step 1
+install serverless npm package
+
+  npm install -g serverless
+  
+  key:AKIAQJDLHTRFQUUZVHP3
+  secret: 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
+
+-----------------------------------------------
+ 
+step 2 configure key and secret by using following command
+
+serverless config credentials --provider aws --key AKIAQJDLHTRFQUUZVHP3 --secret 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
+
+-----------------------------------------------
+
+step 3 create serverless template for app by using following command
+
+serverless create -t aws-nodejs
+
+then it will create following 2 files
+1)serverless.yml
+2)handler.js
+
+-------------------------------------------------
+step 4 add following config code in serverless.yml file
+
+
+
+service: node-test
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  memorySize: 1048
+  stage: dev
+  timeout: 15
+  region: us-east-1
+
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http: 
+          method: any
+          path: /{proxy+}
+          cors: true
+          
+
+----------------------------------------------

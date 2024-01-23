@@ -1,0 +1,21 @@
+service: node-test
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  memorySize: 1048
+  stage: dev
+  timeout: 15
+  region: us-east-1
+
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http: 
+          method: any
+          path: /{proxy+}
+          cors: true
+          
