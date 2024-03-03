@@ -2,7 +2,16 @@ Callstack : callstack is used to manage order execution context in JS
             callsatck has it's global execution context it is manage all functions execution in js
             in callstack we have memory allocation and code execution part.
 
+-------------------------------------------
 Hoisting : in js hositing we can access variable and functions before initailsation wihout any error
 
+There are two main types of hoisting in JavaScript
+1. Variable Hoisting : In JavaScript, variable declarations (but not their assignments) are hoisted to the top of their containing scope. However, the initial value of the variable is not hoisted. This means that you can use a variable before it's declared, but it will have the value undefined.
+
+2. Function Hoisting: Function declarations are also hoisted to the top of their containing scope, including the function definition.
+
+Note: arrow function and named functions are not support hoisting
+-------------------------------------------
 Undefined & not defined : 
-            Undefined is special keyword or datatype in js. Undefined is created in memory creation phase in global execution context 
+    Undefined: Undefined is special keyword or datatype in js. Undefined is created in memory creation phase in global execution context 
+-------------------------------------------------

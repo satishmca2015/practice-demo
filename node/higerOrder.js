@@ -7,7 +7,7 @@
 
 
 
-const redis = [2,3,5];
+/* const redis = [2,3,5];
 
 
 function area(para){
@@ -30,8 +30,23 @@ Array.prototype.calculate = function(logic){
 /* console.log(calculate(redis,area));
 console.log(calculate(redis,diameter)); */
 
-console.log(redis.calculate(diameter));
+// console.log(redis.calculate(diameter)); */
 // console.log(calculate(redis,diameter));
 
 
 
+function callbackFun1() {
+    console.log('I am from callback 1');
+}
+
+function callbackFun2() {
+    console.log('I am from callback 2');
+}
+
+function higerOrder(logic) {
+    // console.log('I am from Higer order');
+    logic();
+}
+
+higerOrder(callbackFun1);
+higerOrder(callbackFun2);

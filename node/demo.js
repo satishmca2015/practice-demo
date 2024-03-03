@@ -15,13 +15,13 @@ const EventEmitter = require('events');
 const emitter = new EventEmitter();
 
 
-emitter.on('eventname',function(args){
+emitter.on('eventname', function (args) {
     console.log(`some event has happened ${args}`);
 });
 
-const obj = {'id':1,'message':'Okkk'};
+const obj = { 'id': 1, 'message': 'Okkk' };
 
-emitter.emit('eventname',obj);
+emitter.emit('eventname', obj);
 
 
 

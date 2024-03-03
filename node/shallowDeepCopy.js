@@ -61,7 +61,9 @@ let obj = {
 };
 
 let newObj = JSON.parse(JSON.stringify(obj));
-obj.address.city="mumbai";
+// obj.address.city="mumbai";
+newObj.address.city="nagar";
+newObj.name="SAT";
 console.log(obj);//{ name: 'satish', address: { city: 'mumbai', pincode: '42324' } }
 console.log(newObj);//{ name: 'satish', address: { city: 'pune', pincode: '42324' } }
 

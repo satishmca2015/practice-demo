@@ -9,14 +9,13 @@ Listening to Events: You can add listeners to an event using the .on() or .addLi
 
 
 
-
-const EventEmitter = require('events');
+const EventEmitter = require("events");
 const emitter = new EventEmitter();
 
-// Listener for the 'message' event
-emitter.on('message', (arg) => {
-  console.log(`A message event occurred with data:`, arg);
+emitter.on('eventTest',(args)=>{
+    console.log(`Event emitter agrs value is: ${args}`);
 });
 
-// Emitting the 'message' event
-emitter.emit('message', 100);
+const args = 10;
+
+emitter.emit('eventTest',args);

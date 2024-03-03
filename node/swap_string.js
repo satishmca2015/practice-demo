@@ -1,11 +1,9 @@
-let a= 'satish';
-let b= 'amol';
-a = a+b;
-// console.log(a);
-
-b = a.substring(0,a.length-b.length);
+let a = 'satish';
+let b = 'amol';
+a = a + b;
+b = a.substring(0, (a.length - b.length));
 a = a.substring(b.length);
-console.log(a,b);
+console.table(`a = ${a}, b= ${b}`);
 
 
 

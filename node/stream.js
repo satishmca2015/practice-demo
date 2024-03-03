@@ -10,18 +10,19 @@ Streams are advantageous because they can handle large amounts of data without c
 
 */
 
-const fs = require('fs');
-const path = require('path');
+// rabbitmQ with stream process with 10 million record renewel
+// https://chat.openai.com/share/d8489f86-6a4f-46ae-8971-b7ef3a1274b8
+
+const fs = require("fs");
+const path = require("path");
 
 // Create a readable stream
-let readableStream = fs.createReadStream(path.join(__dirname, 'input.txt'));
+let readableStream = fs.createReadStream(path.join(__dirname, "input.txt"));
 
 // Create a writable stream
-let writableStream = fs.createWriteStream(path.join(__dirname, 'output.txt'));
+let writableStream = fs.createWriteStream(path.join(__dirname, "output.txt"));
 
 // Pipe the read and write operations
 readableStream.pipe(writableStream);
 
-console.log('Piped the data from input.txt to output.txt');
-
-
+console.log("Piped the data from input.txt to output.txt");
