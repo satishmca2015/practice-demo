@@ -1,3 +1,8 @@
+
+/* 
+In Node.js, the Cluster module allows you to create child processes (workers) that share the same server port. This is particularly useful for scaling Node.js applications across multiple CPU cores, taking advantage of parallel processing and improving overall performance and concurrency.
+*/
+
 const cluster = require('cluster');
 const http = require('http');
 

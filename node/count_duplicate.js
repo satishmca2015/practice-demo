@@ -3,7 +3,7 @@ get only duplicates from array */
 
 
 // get only duplicates from array
-let arr1 = [10,20,30,50,70];
+/* let arr1 = [10,20,30,50,70];
 let arr2 = [10,20,30];
 let arr3 = [...arr1,...arr2];
 
@@ -13,7 +13,7 @@ let arra4 = arr3.filter(function(element,key){
 });
 
 console.log(arra4); 
-console.log(arra4); 
+console.log(arra4);  */
 
 
 // find longgest string from array 
@@ -41,17 +41,18 @@ console.log(getLongestText); */
 
 
 //Count duplicate 
-let data = [10,20,10,20,30,40];
-let temp = {};
-for(i=0;i<data.length;i++){
-    if(temp[data[i]]){
-        temp[data[i]] = temp[data[i]] + 1;
-        //console.log('okkk')
-    }else{
-        temp[data[i]] = 1;
-        // console.log('1')
+function countDuplicate(data) {
+  const temp = {};
+  for (let i = 0; i < data.length; i++) {
+    if (temp[data[i]]) {
+      temp[data[i]] = temp[data[i]] + 1;
+    } else {
+      temp[data[i]] = 1;
     }
-    // console.log(data[i]);
+  }
+  console.log(temp);
 }
-console.log(temp);
+let data = [10, 20, 10, 20, 30, 40];
+countDuplicate(data);
+
 
