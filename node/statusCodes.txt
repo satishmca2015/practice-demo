@@ -1,0 +1,23 @@
+REST APIs commonly use several HTTP status codes to communicate the outcome of a client's request. Here are some of the most frequently used status codes and their meanings:
+
+1. **200 OK**: The request was successful, and the response body contains the requested data.
+  
+2. **201 Created**: The request has been fulfilled, and a new resource has been created. The URI of the newly created resource is typically provided in the response.
+
+3. **204 No Content**: The server successfully processed the request but does not need to return any content. It is often used for successful requests that don't require a response body.
+
+4. **400 Bad Request**: The server cannot process the request due to a client error, such as invalid syntax or missing parameters.
+
+5. **401 Unauthorized**: The client must authenticate itself to get the requested response. It typically occurs when the user hasn't provided proper authentication credentials.
+
+6. **403 Forbidden**: The client is authenticated but does not have permission to access the requested resource.
+
+7. **404 Not Found**: The server cannot find the requested resource. It is commonly used to indicate that the requested URL is not valid or the resource does not exist.
+
+8. **405 Method Not Allowed**: The HTTP method used is not supported for the requested resource.
+
+9. **500 Internal Server Error**: A generic error message indicating that the server encountered an unexpected condition that prevented it from fulfilling the request.
+
+10. **503 Service Unavailable**: The server is currently unable to handle the request due to temporary overload or maintenance of the server.
+
+These are some of the most commonly used status codes in REST APIs, but there are many others covering various scenarios and edge cases. Properly utilizing these status codes helps in conveying accurate information about the outcome of API requests to clients.
