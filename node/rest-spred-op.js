@@ -12,7 +12,7 @@ function addNumbers(a, b, c, ...other) {
 }
 
 const res = addNumbers(2, 3, 2, 5, 6, 9, 4, 6);
-console.log(res);
+console.log(res);// 7
 
 //=================REST Operator END ================
 
